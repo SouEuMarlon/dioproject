@@ -43,7 +43,7 @@ class _MyHomePageState extends State<MyHomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Theme.of(context).colorScheme.primary,
+        backgroundColor: Colors.black87,
         title: Center(
           child: Text(widget.title,
               style: const TextStyle(
@@ -66,21 +66,21 @@ class _MyHomePageState extends State<MyHomePage> {
                 ),
               ),
             ),
-            const Text(
-              'Você clicou no botão algumas vezes:',
+            const Padding(
+              padding: EdgeInsets.only(bottom: 30),
+              child: Text(
+                'Começando a aprender Flutter',
+                style: TextStyle(
+                  color: Colors.black87,
+                  fontSize: 20,
+                  fontWeight: FontWeight.bold,
+                ),
+              ),
             ),
-            Text(
-              '$_counter',
-              style: Theme.of(context).textTheme.headlineMedium,
-            ),
+            Image.network('https://encurtador.com.br/noxHK'),
           ],
         ),
       ),
-      floatingActionButton: FloatingActionButton(
-        onPressed: _incrementCounter,
-        tooltip: 'Increment',
-        child: const Icon(Icons.add),
-      ), // This trailing comma makes auto-formatting nicer for build methods.
     );
   }
 }
