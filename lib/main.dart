@@ -55,6 +55,17 @@ class _MyHomePageState extends State<MyHomePage> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
+            Padding(
+              padding: const EdgeInsets.only(bottom: 30),
+              child: Text(
+                'DIO - Digital Innovation One',
+                style: TextStyle(
+                  color: Colors.blueAccent.shade700,
+                  fontSize: 30,
+                  fontWeight: FontWeight.bold,
+                ),
+              ),
+            ),
             const Text(
               'Você clicou no botão algumas vezes:',
             ),
